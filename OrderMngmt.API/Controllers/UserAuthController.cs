@@ -32,7 +32,7 @@ namespace OrderMngmt.API.Controllers
             if (await _userAuthService.ValidateUserAsync(user))
             {
                 var token = await _userAuthService.CreateTokenAsync();
-                return Ok(token);
+                return Ok(new { Token = token });
             }
             return Unauthorized();
         }

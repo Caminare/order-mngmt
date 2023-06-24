@@ -1,0 +1,18 @@
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "r00t.R00T"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7269:80"
+    depends_on:
+      - db
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=master;User=sa;Password=r00t.R00T;MultipleActiveResultSets=true;TrustServerCertificate=True

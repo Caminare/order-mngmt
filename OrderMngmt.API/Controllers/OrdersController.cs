@@ -34,7 +34,7 @@ namespace OrderMngmt.API.Controllers
         {
             var orders = _orderService.GetOrders(paginationFilter, sortFilter);
 
-            return Ok(orders);
+            return Ok(new { Orders = orders, TotalCount = orders.Count() });
         }
 
         [HttpPost]

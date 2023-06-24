@@ -5,8 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderMngmt.API", "OrderMngmt.API\OrderMngmt.API.csproj", "{3EB446FA-0CA5-4464-9005-F61FDBFF28C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderMngmt.Domain", "OrderMngmt.Domain\OrderMngmt.Domain.csproj", "{A4C62252-49BB-4923-BE04-014AFF3AC366}"
-EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderMngmt.Business", "OrderMngmt.Business\OrderMngmt.Business.csproj", "{EE070598-92E4-4C7E-A3D4-A4818B9948EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderMngmt.Infra", "OrderMngmt.Infra\OrderMngmt.Infra.csproj", "{186DC449-163A-40AD-936C-269DF53D99C9}"

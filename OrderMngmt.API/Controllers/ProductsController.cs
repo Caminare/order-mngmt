@@ -39,7 +39,7 @@ namespace OrderMngmt.API.Controllers
         {
             var products = _productService.GetProducts(paginationFilter, sortFilter);
 
-            return Ok(products);
+            return Ok(new { Products = products, TotalCount = products.Count() });
         }
 
         [HttpPost]

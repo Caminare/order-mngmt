@@ -155,7 +155,7 @@ namespace OrderMngmt.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("OrderMngmt.Domain.Models.Order", b =>
+            modelBuilder.Entity("OrderMngmt.Data.Models.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -222,7 +222,7 @@ namespace OrderMngmt.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OrderMngmt.Domain.Models.Product", b =>
+            modelBuilder.Entity("OrderMngmt.Data.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -273,7 +273,7 @@ namespace OrderMngmt.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OrderMngmt.Domain.Models.User", b =>
+            modelBuilder.Entity("OrderMngmt.Data.Models.User", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -355,7 +355,7 @@ namespace OrderMngmt.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("OrderMngmt.Domain.Models.User", null)
+                    b.HasOne("OrderMngmt.Data.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -364,7 +364,7 @@ namespace OrderMngmt.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("OrderMngmt.Domain.Models.User", null)
+                    b.HasOne("OrderMngmt.Data.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -379,7 +379,7 @@ namespace OrderMngmt.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OrderMngmt.Domain.Models.User", null)
+                    b.HasOne("OrderMngmt.Data.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -388,7 +388,7 @@ namespace OrderMngmt.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("OrderMngmt.Domain.Models.User", null)
+                    b.HasOne("OrderMngmt.Data.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

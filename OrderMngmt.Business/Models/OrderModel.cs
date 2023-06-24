@@ -11,6 +11,7 @@ namespace OrderMngmt.Business.Models
         public int ProductId { get; set; }
         public int Quantity { get; set; }
         public int UserId { get; set; }
+        public decimal TotalPrice { get; set; }
 
         public OrderModel()
         {
@@ -22,6 +23,7 @@ namespace OrderMngmt.Business.Models
             Quantity = order.Quantity;
             UserId = order.UserId;
             Id = order.Id;
+            TotalPrice = order.Total;
         }
 
         public Order ToEntity()
