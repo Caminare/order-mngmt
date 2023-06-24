@@ -14,7 +14,8 @@ namespace OrderMngmt.Data.Migrations
                 CREATE PROCEDURE CreateOrder
                     @UserId INT,
                     @ProductId INT,
-                    @Quantity INT
+                    @Quantity INT,
+                    @NewOrderId INT OUTPUT
                 AS
                 BEGIN
                     DECLARE @Price DECIMAL(18, 2);
@@ -27,7 +28,7 @@ namespace OrderMngmt.Data.Migrations
                     INSERT INTO Orders (UserId, ProductId, Quantity, Total)
                     VALUES (@UserId, @ProductId, @Quantity, @Total);
                     
-                    SELECT SCOPE_IDENTITY() AS NewOrderId;
+                    SET @NewOrderId = SCOPE_IDENTITY();
                 END;";
 
             migrationBuilder.Sql(storedProcedure);

@@ -4,9 +4,9 @@ namespace OrderMngmt.Data.Interfaces
     {
         Task<T?> GetById(int id);
         IQueryable<T> GetAll(int pageNumber = 0, int pageSize = 0, string? sortField = null, string? sortOrder = null);
-        Task Add(T entity);
+        Task<T> Add(T entity);
         Task Update(T entity);
         Task Delete(T entity);
-        Task ExecuteStoredProc(string storedProcName, Dictionary<string, object> parameters);
+        Task<int> ExecuteStoredProc(string storedProcName, Dictionary<string, object> parameters, string outParameterName);
     }
 }

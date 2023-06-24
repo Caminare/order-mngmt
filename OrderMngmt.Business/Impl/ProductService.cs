@@ -31,9 +31,11 @@ namespace OrderMngmt.Business.Impl
             return new ProductModel(product);
         }
 
-        public async Task AddProduct(ProductModel product)
+        public async Task<ProductModel> AddProduct(ProductModel product)
         {
-            await _unitOfWork.GetRepository<Product>().Add(product.ToEntity());
+            var entity = await _unitOfWork.GetRepository<Product>().Add(product.ToEntity());
+            await SaveChanges();
+            return new ProductModel(entity);
         }
 
         public async Task<int> SaveChanges()

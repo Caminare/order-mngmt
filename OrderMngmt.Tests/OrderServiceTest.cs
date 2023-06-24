@@ -30,13 +30,14 @@ namespace OrderMngmt.Tests
             var order = new OrderModel { ProductId = 1, Quantity = 10, UserId = 1 };
             var product = new Product { Id = 1, Name = "Product 1", Price = 100 };
             _unitOfWorkMock.Setup(x => x.GetRepository<Product>().GetById(order.ProductId)).ReturnsAsync(product);
-            _unitOfWorkMock.Setup(x => x.GetRepository<Order>().ExecuteStoredProc("CreateOrder", It.IsAny<Dictionary<string, object>>()));
+            _unitOfWorkMock.Setup(x => x.GetRepository<Order>().ExecuteStoredProc("CreateOrder", It.IsAny<Dictionary<string, object>>(), "@NewOrderId")).ReturnsAsync(1);
+            _unitOfWorkMock.Setup(x => x.GetRepository<Order>().GetById(1)).ReturnsAsync(new Order { Id = 1, ProductId = 1, Quantity = 10, UserId = 1, Total = 1000 });
 
             // Act
             await _orderService.AddOrder(order);
 
             // Assert
-            _unitOfWorkMock.Verify(x => x.GetRepository<Order>().ExecuteStoredProc("CreateOrder", It.IsAny<Dictionary<string, object>>()), Times.Once);
+            _unitOfWorkMock.Verify(x => x.GetRepository<Order>().ExecuteStoredProc("CreateOrder", It.IsAny<Dictionary<string, object>>(), "@NewOrderId"), Times.Once);
         }
 
         [Fact]

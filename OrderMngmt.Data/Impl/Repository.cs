@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using OrderMngmt.Data.Interfaces;
 using OrderMngmt.Data.Extensions;
 using Microsoft.Data.SqlClient;
-using System.Collections.Generic;
+using System.Data;
 
 namespace OrderMngmt.Data.Impl
 {
@@ -27,11 +27,12 @@ namespace OrderMngmt.Data.Impl
             var query = _entities.AsQueryable().Paginate(pageNumber, pageSize).Sort(sortField, sortOrder);
             return query;
         }
-    
 
-        public async Task Add(T entity)
+
+        public async Task<T> Add(T entity)
         {
-            await _entities.AddAsync(entity);
+            var added = await _entities.AddAsync(entity);
+            return added.Entity;
         }
 
         public async Task Update(T entity)
@@ -44,17 +45,18 @@ namespace OrderMngmt.Data.Impl
             _entities.Remove(entity);
         }
 
-        public async Task ExecuteStoredProc(string storedProcName, Dictionary<string, object> parameters)
+        public async Task<int> ExecuteStoredProc(string storedProcName, Dictionary<string, object> parameters, string outParameterName)
         {
-            // convert dictionary to sql parameters
             var sqlParameters = new List<SqlParameter>();
             foreach (var parameter in parameters)
             {
                 sqlParameters.Add(new SqlParameter(parameter.Key, parameter.Value));
             }
-            var sql = $"{storedProcName} {String.Join(", ", sqlParameters.Select(x => $"{x.ParameterName} = {x.ParameterName}"))}";
+            var outSqlParameter = new SqlParameter(outParameterName, SqlDbType.Int) { Direction = ParameterDirection.Output };
+            var sql = $"{storedProcName} {String.Join(", ", sqlParameters.Select(x => $"{x.ParameterName} = {x.ParameterName}"))}, {outParameterName} = {outSqlParameter.ParameterName} OUT";
+            sqlParameters.Add(outSqlParameter);
             await _dbContext.Database.ExecuteSqlRawAsync(sql, sqlParameters);
-
+            return (int)outSqlParameter.Value;
         }
     }
 }

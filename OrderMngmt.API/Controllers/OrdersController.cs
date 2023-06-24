@@ -40,10 +40,8 @@ namespace OrderMngmt.API.Controllers
         [HttpPost]
         public async Task<ActionResult<OrderModel>> PostOrder(OrderModel order)
         {
-            await _orderService.AddOrder(order);
-            await _orderService.SaveChanges();
-
-            return CreatedAtAction(nameof(GetOrder), new { id = order.Id }, order);
+            var insertedOrder = await _orderService.AddOrder(order);
+            return CreatedAtAction(nameof(GetOrder), new { id = insertedOrder.Id }, insertedOrder);
         }
     }
 }

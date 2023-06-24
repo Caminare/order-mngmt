@@ -6,7 +6,7 @@ namespace OrderMngmt.Business.Interfaces
     {
         IQueryable<ProductModel> GetProducts(PaginationFilter? paginationFilter, SortFilter? sortFilter);
         Task<ProductModel?> GetProductById(int id);
-        Task AddProduct(ProductModel product);
+        Task<ProductModel> AddProduct(ProductModel product);
         Task<int> SaveChanges();
     }
 }

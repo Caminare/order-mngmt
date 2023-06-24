@@ -45,10 +45,8 @@ namespace OrderMngmt.API.Controllers
         [HttpPost]
         public async Task<ActionResult<ProductModel>> PostProduct(ProductModel product)
         {
-            await _productService.AddProduct(product);
-            await _productService.SaveChanges();
-
-            return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
+            var insertedProduct = await _productService.AddProduct(product);
+            return CreatedAtAction(nameof(GetProduct), new { id = insertedProduct.Id }, insertedProduct);
         }
 
     }

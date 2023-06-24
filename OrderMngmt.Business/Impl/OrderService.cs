@@ -2,8 +2,7 @@ using OrderMngmt.Business.Interfaces;
 using OrderMngmt.Data.Interfaces;
 using OrderMngmt.Business.Models;
 using OrderMngmt.Data.Models;
-
-
+using System.Data;
 
 namespace OrderMngmt.Business.Impl
 {
@@ -16,7 +15,7 @@ namespace OrderMngmt.Business.Impl
             _unitOfWork = unitOfWork;
         }
 
-        public async Task AddOrder(OrderModel order)
+        public async Task<OrderModel> AddOrder(OrderModel order)
         {
             var orderRepository = _unitOfWork.GetRepository<Order>();
 
@@ -32,7 +31,9 @@ namespace OrderMngmt.Business.Impl
                 { "@UserId", order.UserId }
             };
 
-            await orderRepository.ExecuteStoredProc("CreateOrder", parameters);
+            var id = await orderRepository.ExecuteStoredProc("CreateOrder", parameters, "@NewOrderId");
+            await SaveChanges();
+            return await GetOrderById(id);
         }
 
         public async Task<OrderModel?> GetOrderById(int id)
