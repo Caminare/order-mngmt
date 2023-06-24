@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "XoG8LTD+DqTThUpQ8ks/eswfe18QLHYw7FkyipX6hHY=",
+  "Source": "OrderMngmt.API",
+  "BasePath": "_content/OrderMngmt.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

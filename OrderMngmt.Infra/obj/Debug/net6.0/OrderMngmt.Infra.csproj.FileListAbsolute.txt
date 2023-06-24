@@ -1,0 +1,12 @@
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/bin/Debug/net6.0/OrderMngmt.Infra.deps.json
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/bin/Debug/net6.0/OrderMngmt.Infra.dll
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/bin/Debug/net6.0/OrderMngmt.Infra.pdb
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/obj/Debug/net6.0/OrderMngmt.Infra.csproj.AssemblyReference.cache
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/obj/Debug/net6.0/OrderMngmt.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/obj/Debug/net6.0/OrderMngmt.Infra.AssemblyInfoInputs.cache
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/obj/Debug/net6.0/OrderMngmt.Infra.AssemblyInfo.cs
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/obj/Debug/net6.0/OrderMngmt.Infra.csproj.CoreCompileInputs.cache
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/obj/Debug/net6.0/OrderMngmt.Infra.dll
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/obj/Debug/net6.0/refint/OrderMngmt.Infra.dll
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/obj/Debug/net6.0/OrderMngmt.Infra.pdb
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Infra/obj/Debug/net6.0/ref/OrderMngmt.Infra.dll

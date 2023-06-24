@@ -1,0 +1,14 @@
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/bin/Debug/net6.0/OrderMngmt.Data.deps.json
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/bin/Debug/net6.0/OrderMngmt.Data.runtimeconfig.json
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/bin/Debug/net6.0/OrderMngmt.Data.dll
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/bin/Debug/net6.0/OrderMngmt.Data.pdb
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/obj/Debug/net6.0/OrderMngmt.Data.csproj.AssemblyReference.cache
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/obj/Debug/net6.0/OrderMngmt.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/obj/Debug/net6.0/OrderMngmt.Data.AssemblyInfoInputs.cache
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/obj/Debug/net6.0/OrderMngmt.Data.AssemblyInfo.cs
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/obj/Debug/net6.0/OrderMngmt.Data.csproj.CoreCompileInputs.cache
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/obj/Debug/net6.0/OrderMngmt.Data.dll
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/obj/Debug/net6.0/refint/OrderMngmt.Data.dll
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/obj/Debug/net6.0/OrderMngmt.Data.pdb
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/obj/Debug/net6.0/OrderMngmt.Data.genruntimeconfig.cache
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Data/obj/Debug/net6.0/ref/OrderMngmt.Data.dll

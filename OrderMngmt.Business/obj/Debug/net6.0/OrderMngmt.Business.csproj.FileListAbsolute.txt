@@ -1,0 +1,15 @@
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/bin/Debug/net6.0/OrderMngmt.Business.deps.json
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/bin/Debug/net6.0/OrderMngmt.Business.dll
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/bin/Debug/net6.0/OrderMngmt.Business.pdb
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/bin/Debug/net6.0/OrderMngmt.Data.dll
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/bin/Debug/net6.0/OrderMngmt.Data.pdb
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/obj/Debug/net6.0/OrderMngmt.Business.csproj.AssemblyReference.cache
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/obj/Debug/net6.0/OrderMngmt.Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/obj/Debug/net6.0/OrderMngmt.Business.AssemblyInfoInputs.cache
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/obj/Debug/net6.0/OrderMngmt.Business.AssemblyInfo.cs
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/obj/Debug/net6.0/OrderMngmt.Business.csproj.CoreCompileInputs.cache
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/obj/Debug/net6.0/OrderMngmt.Business.csproj.CopyComplete
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/obj/Debug/net6.0/OrderMngmt.Business.dll
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/obj/Debug/net6.0/refint/OrderMngmt.Business.dll
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/obj/Debug/net6.0/OrderMngmt.Business.pdb
+/Users/gvitor/Personal/projects/order-mngmt/OrderMngmt.Business/obj/Debug/net6.0/ref/OrderMngmt.Business.dll
